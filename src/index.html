@@ -7,38 +7,22 @@
     <title>goit-js-hw-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
   />
   </head>
   <body>
     <div class="container">
       <form class="form">
-        <label>
-          <input 
-          type="text" 
-          name="info" 
-          id="data" 
-          required 
-          placeholder="Search images..." />
-        </label>
-        <button type="submit">Search</button>
+        <input
+          type="text"
+          name="inputname"
+          placeholder="Search images..."
+        />
+        <button class="button" type="submit">Search</button>
       </form>
       <div class="loader visually-hidden"></div>
       <ul class="gallery"></ul>
     </div>
-    
-    <!-- <li class="gallery-item">
-      <a class="gallery-link" href="large-image.jpg">
-        <img
-          class="gallery-image"
-          src="small-image.jpg"
-          alt="Image description"
-        />
-      </a>
-    </li> -->
-    <script type="module" src="./main.js"></script>
-    <script type="module" src="./js/pixabay-api.js"></script>
-    <script type="module" src="./js/render-functions.js"></script>
+    <script src="./main.js" type="module" defer></script>
   </body>
 </html>
