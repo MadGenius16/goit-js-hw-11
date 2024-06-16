@@ -22,7 +22,7 @@
   animation: rotation 1s linear infinite;
   }
 
-   @keyframes rotation {
+  @keyframes rotation {
   0% {
       transform: rotate(0deg);
   }
