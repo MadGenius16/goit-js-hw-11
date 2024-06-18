@@ -2,12 +2,12 @@ import { gallery, lightbox, closeLoader } from '../main';
 
 export function showGallery(images) {
   if (images.length===0) {
+    closeLoader();
     iziToast.error({
       message: 'Sorry, there are no images matching your search query. Please try again!',
       color: 'red',
       position: 'topRight',
     });
-    closeLoader();
     form.reset();
   } else {
     const markup = images
