@@ -44,5 +44,5 @@ form.addEventListener('submit', event => {
       );
     form.reset();
   }
-  // closeLoader()
+  closeLoader()
 });
